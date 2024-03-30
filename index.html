@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de produtos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Cadastro de Produtos</div>
+        <form action="#">
+            <div class="produtos">
+                <div class="input-box">
+                    <span class="descricao">Código</span>
+                    <input type="text" placeholder="Código">  
+                </div>
+                <div class="input-box">
+                    <span class="descricao">Descrição</span>
+                    <input type="text" placeholder="Descrição" required>  
+                </div>
+                <div class="input-box">
+                    <span class="descricao">Fornecedor</span>
+                    <input type="text" placeholder="Fornecedor" required>  
+                </div>
+                <div class="input-box">
+                    <span class="descricao">Código Fornecedor</span>
+                    <input type="text" placeholder="Código Fornecedor" required>  
+                </div>
+                <div class="input-box">
+                    <span class="descricao">R$ Custo</span>
+                    <input type="text" placeholder="Custo" required>  
+                </div>
+                <div class="input-box">
+                    <span class="descricao">MK</span>
+                    <input type="text" placeholder="Markup" required>  
+                </div>
+                <div class="input-box">
+                    <span class="descricao">R$ Venda</span>
+                    <input type="text" placeholder="Preço Venda" required>  
+                </div>
+                <div class="input-box">
+                    <span class="descricao">Un de venda</span>
+                    <input type="text" placeholder="Un de venda" required>  
+                </div>
+                <div class="input-box">
+                    <span class="descricao">NCM</span>
+                    <input type="text" placeholder="NCM" required>  
+                </div>
+                <div class="restricoes">
+                    <input type="radio" name="opcoes" id="dot-1">
+                    <input type="radio" name="opcoes" id="dot-2">
+                    <input type="radio" name="opcoes" id="dot-3">
+                    <span class="visibilidade">Restrições</span>
+                    <div class="categorias">
+                        <label for="dot-1">
+                            <span class="dot um"></span>
+                            <span class="opcoes">Ativo</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot dois"></span>
+                            <span class="opcoes">Fora de linha</span>
+                        </label>
+                        <label for="dot-3">
+                            <span class="dot tres"></span>
+                            <span class="opcoes">Bloqueado</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
