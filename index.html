@@ -2,50 +2,85 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Página criada para cadastro de produtos">
+    <meta name="keywords" content="Formulário de cadastros de produtos">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Cadastro de produtos</title>
 </head>
 <body>
+    <header></header>
     <div class="container">
         <div class="title">Cadastro de Produtos</div>
         <form action="#">
-            <div class="produtos">
+            <div class="produtos01">
                 <div class="input-box">
-                    <span class="descricao">Código</span>
-                    <input type="text" placeholder="Código">  
+                    <label for="icodigo" class="descricao">Código</label>
+                    <input type="number" name="codigo" id="icodigo" placeholder="cód">
                 </div>
+                <div class="input-box">
+                    <span class="descricao">Fornecedor: </span>
+                    <select name="fornecedor" id="forn" required>
+                        <option value="" selected>Selecionar</option>
+                        <option value="forn_01">Forn. 01</option>
+                        <option value="forn_02">Forn. 02</option>
+                        <option value="forn_03">Forn. 03</option>
+                        <option value="forn_04">Forn. 04</option>
+                    </select>  
+                </div>
+                <div class="input-box">
+                    <span class="descricao">Código Fornecedor:</span>
+                    <input type="text" placeholder="Cód. For.">  
+                </div>
+            </div>
+            <div class="produtos03">
+            </div>
+            <div class="produtos02">
                 <div class="input-box">
                     <span class="descricao">Descrição</span>
-                    <input type="text" placeholder="Descrição" required>  
+                    <textarea name="" id="" cols="30" rows="3" required placeholder="Elevador Gangorra Automotivo 1500 Kg Engecass" maxlength="330"></textarea>
                 </div>
-                <div class="input-box">
-                    <span class="descricao">Fornecedor</span>
-                    <input type="text" placeholder="Fornecedor" required>  
-                </div>
-                <div class="input-box">
-                    <span class="descricao">Código Fornecedor</span>
-                    <input type="text" placeholder="Código Fornecedor" required>  
-                </div>
+            </div>
+            <div class="produtos">
                 <div class="input-box">
                     <span class="descricao">R$ Custo</span>
-                    <input type="text" placeholder="Custo" required>  
+                    <input type="text" placeholder="Ex. R$1,00" required>  
                 </div>
                 <div class="input-box">
-                    <span class="descricao">MK</span>
-                    <input type="text" placeholder="Markup" required>  
+                    <span class="descricao">MK Revenda</span>
+                    <input type="text" placeholder="R$. Ex. 2.5" required>  
+                </div>
+                <div class="input-box">
+                    <span class="descricao">R$ Revenda</span>
+                    <input type="text" placeholder="R$2,00" required>  
+                </div>
+                <div class="input-box">
+                    <span class="descricao">MK Venda</span>
+                    <input type="text" placeholder="Ex. 3.5" required>  
                 </div>
                 <div class="input-box">
                     <span class="descricao">R$ Venda</span>
-                    <input type="text" placeholder="Preço Venda" required>  
+                    <input type="text" placeholder="Ex. R$8,75" required>  
                 </div>
                 <div class="input-box">
-                    <span class="descricao">Un de venda</span>
-                    <input type="text" placeholder="Un de venda" required>  
+                    <span class="descricao">Margem</span>
+                    <input type="text" placeholder="0,00" readonly>  
+                </div>
+                <div class="input-box">
+                    <span class="descricao">Un venda</span>
+                    <input type="text" placeholder="UN | M" required>  
                 </div>
                 <div class="input-box">
                     <span class="descricao">NCM</span>
-                    <input type="text" placeholder="NCM" required>  
+                    <input type="text" placeholder="Código NCM" required maxlength="8">  
+                </div>
+                <div class="input-box">
+                    <span class="descricao">Estoque</span>
+                    <input type="text" placeholder="0,00" readonly>  
+                </div>
+                <div class="input-box">
+                    <span class="descricao">Endereço</span>
+                    <input type="text" placeholder="Endereço">  
                 </div>
                 <div class="restricoes">
                     <input type="radio" name="opcoes" id="dot-1">
@@ -66,6 +101,28 @@
                             <span class="opcoes">Bloqueado</span>
                         </label>
                     </div>
+                </div>
+            </div>
+            <div class="produtos02">
+                <div class="input-box">
+                    <span class="descricao">Anotações Importantes</span>
+                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="produtos01">
+                <div class="input-box">
+                    <span class="descricao">Acessórios: </span>
+                    <select name="fornecedor" id="forn" required>
+                        <option value="" selected>Selecionar</option>
+                        <option value="Cub">Chave de rodas N° 19</option>
+                        <option value="Damol">Parafuso segredo antifurto</option>
+                        <option value="Deda">Pneu Aro 14 165/45</option>
+                        <option value="Lucchi">Alarme com corta correte</option>
+                    </select>  
+                </div>
+                <div class="input-box">
+                    <span class="descricao">R$ Acessório:</span>
+                    <input type="text" placeholder="0,00" readonly>  
                 </div>
             </div>
             <div class="button">
