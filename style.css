@@ -14,14 +14,49 @@ input[type="number"]::-webkit-inner-spin-button{
     padding: 0;
     margin: 0;
 }
+header {
+    background-color: #737c73;
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+}
 
-body {
+header .interface {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+header a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .5s;
+}
+
+header a:hover {
+    color: tomato;
+}
+
+main {
+    position: relative;
+    top: 60px;
+}
+
+main .form-cadastro {
     align-items: center;
     background-color: #5071d585;
     /* background: linear-gradient(135deg, #5071d5, #507050); */
     display: flex;
     justify-content: center;
-    /* height: 100vh; */
+    /* height: 95vh; */
     padding: 20px;
 }
 
@@ -91,7 +126,7 @@ body {
     border-radius: 5px;
     font-size: 15px;
     height: 35px;
-    padding-left: 20px;
+    padding-left: 10px;
     outline: none;
     transition: all 0.5s ease;
     width: 100%;
